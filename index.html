@@ -23,10 +23,48 @@
 
     <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
     <!-- Already specified in the charset above--><meta charset="utf-8">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      border: 1px solid red;
+      padding: 15px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+      border: 1px solid red;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    </style>
   </head>
 <body>
+<div class="header">
   <header><h1>Brian Ekwem</h1></header>
+</div>
   <section>
+    <div class="col-9">
       <h3>50 Word Description of Myself</h3>
       <article>
         <p>My name is Brian Ekwem and I am 15 years old. I am from Nigeria but currently live in Edmonton, Canada. My hobbies include playing soccer, watching anime and playing video games, as well as the occasional bike ride on sunny days. I am a student and I attend Lillian Osborne High School.</p>
@@ -34,9 +72,12 @@
       <h3>Career Plans</h3>
       <article>
         <p>I take interest in Mathematics and Science, specifically Biology as I plan to go into the medical field after my graduation. My current goal is to become a successful neurosurgeon or radiologist. I have chosen these as my career paths because I have always been fascinated my the human body, as well as to follow in my father's footsteps. I also hope to save as many lives as I can and of course make a good salary out of it.</p>
+      </div>
       </article>
     </section>
     <section>
+      <div class="row">
+      <div class="col-3">
       <h3>Full Name</h3>
       <article>
         <p>Brian Chukwunwikem Ekwem</p>
@@ -82,6 +123,7 @@
         <a href="childPages/Roles/Athlete.html" target="_blank">
         <li><em>Athlete|Click here</a></em>
         </p>
+      </div>
       </article>
 
     </section>
